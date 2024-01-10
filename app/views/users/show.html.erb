@@ -1,0 +1,7 @@
+<h1><%= 'アカウント詳細ページ' %></h1>
+<p>名前: <%= @user.name %></p>
+<p>メールアドレス: <%= @user.email %></p>
+
+<%= link_to t('common.edit-user'), edit_user_path %> 
+
+<%= link_to t('common.destroy-user'), user_path(@user.id),  method: :delete, data: { confirm: t('common.confirm_destroy') } %>
