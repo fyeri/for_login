@@ -2,6 +2,6 @@
 <p>名前: <%= @user.name %></p>
 <p>メールアドレス: <%= @user.email %></p>
 
-<%= link_to t('.edit-user'), edit_user_path %> 
+<%= link_to t('.edit-user'), edit_user_path, id:"edit-user" %> 
 
-<%= link_to t('.destroy-user'), user_path(@user.id),  method: :delete, data: { confirm: t('common.confirm_destroy') } %>
+<%= link_to t('.destroy-user'), user_path(@user.id),  method: :delete, data: { confirm: t('common.confirm_destroy') } id:"destroy-user" %>
