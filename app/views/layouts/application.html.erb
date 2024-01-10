@@ -17,15 +17,15 @@
 
   <% if logged_in? %>
   <ul>
-      <li><%= link_to t('common.tasks-index'), tasks_path %></li>
-      <li><%= link_to t('common.new-task'), new_task_path %></li>
-      <li><%= link_to t('common.my-account'), user_path(current_user.id) %></li>
-      <li><%= link_to t('common.sign-out'), session_path(current_user.id), method: :delete %></li>
+      <li><%= link_to t('.tasks-index'), tasks_path %></li>
+      <li><%= link_to t('.new-task'), new_task_path %></li>
+      <li><%= link_to t('.my-account'), user_path(current_user.id) %></li>
+      <li><%= link_to t('.sign-out'), session_path(current_user.id), method: :delete %></li>
   </ul>
 <% else %>
 <ul>
-  <li><%= link_to t('common.sign-up'), new_user_path %></li>
-  <li><%= link_to t('common.create-session'), new_session_path %></li>
+  <li><%= link_to t('.sign-up'), new_user_path %></li>
+  <li><%= link_to t('.sing-in'), new_session_path %></li>
 </ul>
 <% end %>
 

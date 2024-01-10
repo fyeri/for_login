@@ -22,20 +22,11 @@ ja:
       create: 登録する
       update: 更新する
   common:
-    sign-in: ログインページ
-    sign-up: アカウント登録
-    my-account: アカウント
-    sign-out: ログアウト
     name: 名前
     email: メールアドレス
     password: パスワード
-    create-session: ログイン
     password_confirmation: パスワード（確認）
     create-my-account: 登録する
-    tasks-index: タスク一覧
-    new-task: タスクを登録する
-    edit-user: 編集
-    destroy-user: 削除
 
     new: 新規作成
     show: 詳細
@@ -58,10 +49,37 @@ ja:
       updated: タスクを更新しました
     destroy:
       destroyed: タスクを削除しました
+
+  layouts:
+    application:
+      tasks-index: タスク一覧
+      new-task: タスクを登録する
+      my-account: アカウント
+      sign-out: ログアウト
+      sign-up: アカウント登録
+      sing-in: ログイン
+
+  
+  sessions:
+    new:
+      email: メールアドレス
+      password: パスワード
+      create-session: ログイン
+
   users:
-    create:
-      created: アカウント登録
-    update:
-      updated: アカウントを更新しました
-    destroy:
-      destroyed: アカウントを削除しました
+    edit:
+     name: 名前
+     email: メールアドレス
+     password: パスワード
+     create-session: ログイン
+     password_confirmation: パスワード（確認）
+     back: 戻る
+
+    show:
+      edit-user: 編集
+      destroy-user: 削除
+
+
+
+
+

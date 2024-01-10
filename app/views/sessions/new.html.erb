@@ -1,10 +1,10 @@
-<h1><%= t('common.sign-in') %></h1>
+<h1><%= 'ログインページ'  %></h1>
 <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
-  <%= f.label t('common.email') %>
+  <%= f.label t('.email') %>
   <%= f.email_field :email %>
-  <%= f.label t('common.password') %>
+  <%= f.label t('.password') %>
   <%= f.password_field :password %>
 
   <br>
-  <%= f.submit t('common.create-session') %>
+  <%= f.submit t('.create-session') %>
 <% end %>

@@ -15,13 +15,13 @@
 
 <%= form_with(model: @user, local: true) do |f| %>
 
-  <%= f.label t('common.name') %>
+  <%= f.label t('.name') %>
   <%= f.text_field :name %>
-  <%= f.label t('common.email') %>
+  <%= f.label t('.email') %>
   <%= f.email_field :email %>
-  <%= f.label t('common.password') %>
+  <%= f.label t('.password') %>
   <%= f.password_field :password %>
-  <%= f.label t('common.password_confirmation') %>
+  <%= f.label t('.password_confirmation') %>
   <%= f.password_field :password_confirmation %>
 
    <br>
@@ -29,5 +29,5 @@
  
  
 <% end %>
-<%= link_to t('common.back'), user_path %>
+<%= link_to t('.back'), user_path %>
 
